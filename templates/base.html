@@ -1,0 +1,22 @@
+{% load static %}
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="manifest" href="/manifest.webmanifest">
+
+  <title>Bluefinance &mdash; {% block title %}{% endblock title%}</title>
+
+</head>
+<body>
+
+  {% include 'navbar.html' %}
+  {% block content %}{% endblock content %}
+  {% include 'footer.html' %}
+
+  <script src="{% static 'core/js/base.js' %}" data-rel-js></script>
+</body>
+</html>
