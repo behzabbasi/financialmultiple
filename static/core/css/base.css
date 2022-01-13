@@ -1,3 +1,10 @@
 body{
+
   background-color: antiquewhite;
+}
+
+h1{
+  background-color:aqua;
+  font-size: 48px;
+  color: coral;
 }

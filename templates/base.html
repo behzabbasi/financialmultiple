@@ -8,16 +8,14 @@
 
   <link rel="manifest" href="/manifest.webmanifest">
 
-  <title>Bluefinance &mdash; {% block title %}{% endblock title%}</title>
+  <title>Financialmultiple &mdash; {% block title %}{% endblock title%}</title>
   <link rel="stylesheet" href="{% static 'core/css/base.css' %}">
 
 </head>
 <body>
-
   {% include 'navbar.html' %}
   {% block content %}{% endblock content %}
   {% include 'footer.html' %}
 
-  <script src="{% static 'core/js/base.js' %}" data-rel-js></script>
 </body>
 </html>
