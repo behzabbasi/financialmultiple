@@ -1,0 +1,506 @@
+Emittententicker,Name,Sektor,Gewichtung,Boerse
+AAPL,APPLE INC,IT,6.91,NASDAQ
+MSFT,MICROSOFT CORP,IT,6.31,NASDAQ
+AMZN,AMAZON COM INC,Zyklische Konsumgüter ,3.82,NASDAQ
+GOOGL,ALPHABET INC CLASS A,Kommunikation,2.24,NASDAQ
+GOOG,ALPHABET INC CLASS C,Kommunikation,2.1,NASDAQ
+TSLA,TESLA INC,Zyklische Konsumgüter ,2.05,NASDAQ
+FB,META PLATFORMS INC CLASS A,Kommunikation,1.98,NASDAQ
+NVDA,NVIDIA CORP,IT,1.91,NASDAQ
+BRK-B,BERKSHIRE HATHAWAY INC CLASS B,Financials,1.33,New York Stock Exchange Inc.
+JPM,JPMORGAN CHASE & CO,Financials,1.21,New York Stock Exchange Inc.
+UNH,UNITEDHEALTH GROUP INC,Gesundheitsversorgung,1.12,New York Stock Exchange Inc.
+HD,HOME DEPOT INC,Zyklische Konsumgüter ,1.1,New York Stock Exchange Inc.
+JNJ,JOHNSON & JOHNSON,Gesundheitsversorgung,1.1,New York Stock Exchange Inc.
+PG,PROCTER & GAMBLE,Nichtzyklische Konsumgüter,0.94,New York Stock Exchange Inc.
+V,VISA INC CLASS A,IT,0.9,New York Stock Exchange Inc.
+BAC,BANK OF AMERICA CORP,Financials,0.83,New York Stock Exchange Inc.
+ADBE,ADOBE INC,IT,0.76,NASDAQ
+MA,MASTERCARD INC CLASS A,IT,0.76,New York Stock Exchange Inc.
+PFE,PFIZER INC,Gesundheitsversorgung,0.73,New York Stock Exchange Inc.
+DIS,WALT DISNEY,Kommunikation,0.7,New York Stock Exchange Inc.
+NFLX,NETFLIX INC,Kommunikation,0.68,NASDAQ
+XOM,EXXON MOBIL CORP,Energie,0.67,New York Stock Exchange Inc.
+CRM,SALESFORCE.COM INC,IT,0.65,New York Stock Exchange Inc.
+TMO,THERMO FISHER SCIENTIFIC INC,Gesundheitsversorgung,0.63,New York Stock Exchange Inc.
+CSCO,CISCO SYSTEMS INC,IT,0.61,NASDAQ
+AVGO,BROADCOM INC,IT,0.6,NASDAQ
+ACN,ACCENTURE PLC CLASS A,IT,0.59,New York Stock Exchange Inc.
+ABT,ABBOTT LABORATORIES,Gesundheitsversorgung,0.59,New York Stock Exchange Inc.
+COST,COSTCO WHOLESALE CORP,Nichtzyklische Konsumgüter,0.58,NASDAQ
+PEP,PEPSICO INC,Nichtzyklische Konsumgüter,0.58,NASDAQ
+CVX,CHEVRON CORP,Energie,0.58,New York Stock Exchange Inc.
+PYPL,PAYPAL HOLDINGS INC,IT,0.57,NASDAQ
+ABBV,ABBVIE INC,Gesundheitsversorgung,0.55,New York Stock Exchange Inc.
+CMCSA,COMCAST CORP CLASS A,Kommunikation,0.55,NASDAQ
+NKE,NIKE INC CLASS B,Zyklische Konsumgüter ,0.54,New York Stock Exchange Inc.
+KO,COCA-COLA,Nichtzyklische Konsumgüter,0.54,New York Stock Exchange Inc.
+VZ,VERIZON COMMUNICATIONS INC,Kommunikation,0.52,New York Stock Exchange Inc.
+QCOM,QUALCOMM INC,IT,0.52,NASDAQ
+INTC,INTEL CORPORATION CORP,IT,0.52,NASDAQ
+WFC,WELLS FARGO,Financials,0.51,New York Stock Exchange Inc.
+DHR,DANAHER CORP,Gesundheitsversorgung,0.51,New York Stock Exchange Inc.
+WMT,WALMART INC,Nichtzyklische Konsumgüter,0.5,New York Stock Exchange Inc.
+MCD,MCDONALDS CORP,Zyklische Konsumgüter ,0.49,New York Stock Exchange Inc.
+LLY,ELI LILLY,Gesundheitsversorgung,0.49,New York Stock Exchange Inc.
+INTU,INTUIT INC,IT,0.47,NASDAQ
+MRK,MERCK & CO INC,Gesundheitsversorgung,0.47,New York Stock Exchange Inc.
+LOW,LOWES COMPANIES INC,Zyklische Konsumgüter ,0.46,New York Stock Exchange Inc.
+TXN,TEXAS INSTRUMENT INC,IT,0.45,NASDAQ
+NEE,NEXTERA ENERGY INC,Versorger,0.44,New York Stock Exchange Inc.
+LIN,LINDE PLC,Materialien,0.43,New York Stock Exchange Inc.
+AMD,ADVANCED MICRO DEVICES INC,IT,0.42,NASDAQ
+T,AT&T INC,Kommunikation,0.41,New York Stock Exchange Inc.
+UNP,UNION PACIFIC CORP,Industrie,0.41,New York Stock Exchange Inc.
+MDT,MEDTRONIC PLC,Gesundheitsversorgung,0.38,New York Stock Exchange Inc.
+UPS,UNITED PARCEL SERVICE INC CLASS B,Industrie,0.38,New York Stock Exchange Inc.
+MS,MORGAN STANLEY,Financials,0.37,New York Stock Exchange Inc.
+ORCL,ORACLE CORP,IT,0.37,New York Stock Exchange Inc.
+HON,HONEYWELL INTERNATIONAL INC,Industrie,0.36,NASDAQ
+PM,PHILIP MORRIS INTERNATIONAL INC,Nichtzyklische Konsumgüter,0.35,New York Stock Exchange Inc.
+AMAT,APPLIED MATERIAL INC,IT,0.35,NASDAQ
+SBUX,STARBUCKS CORP,Zyklische Konsumgüter ,0.34,NASDAQ
+GS,GOLDMAN SACHS GROUP INC,Financials,0.34,New York Stock Exchange Inc.
+BLK,BLACKROCK INC,Financials,0.33,New York Stock Exchange Inc.
+RTX,RAYTHEON TECHNOLOGIES CORP,Industrie,0.33,New York Stock Exchange Inc.
+CVS,CVS HEALTH CORP,Gesundheitsversorgung,0.32,New York Stock Exchange Inc.
+BMY,BRISTOL MYERS SQUIBB,Gesundheitsversorgung,0.32,New York Stock Exchange Inc.
+NOW,SERVICENOW INC,IT,0.32,New York Stock Exchange Inc.
+C,CITIGROUP INC,Financials,0.32,New York Stock Exchange Inc.
+AMT,AMERICAN TOWER REIT CORP,Immobilien,0.31,New York Stock Exchange Inc.
+ISRG,INTUITIVE SURGICAL INC,Gesundheitsversorgung,0.31,NASDAQ
+SCHW,CHARLES SCHWAB CORP,Financials,0.31,New York Stock Exchange Inc.
+AMGN,AMGEN INC,Gesundheitsversorgung,0.3,NASDAQ
+TGT,TARGET CORP,Zyklische Konsumgüter ,0.3,New York Stock Exchange Inc.
+PLD,PROLOGIS REIT INC,Immobilien,0.29,New York Stock Exchange Inc.
+BA,BOEING,Industrie,0.29,New York Stock Exchange Inc.
+SPGI,S&P GLOBAL INC,Financials,0.28,New York Stock Exchange Inc.
+CAT,CATERPILLAR INC,Industrie,0.28,New York Stock Exchange Inc.
+IBM,INTERNATIONAL BUSINESS MACHINES CO,IT,0.28,New York Stock Exchange Inc.
+ZTS,ZOETIS INC CLASS A,Gesundheitsversorgung,0.28,New York Stock Exchange Inc.
+AXP,AMERICAN EXPRESS,Financials,0.27,New York Stock Exchange Inc.
+GE,GENERAL ELECTRIC,Industrie,0.27,New York Stock Exchange Inc.
+DE,DEERE,Industrie,0.26,New York Stock Exchange Inc.
+ANTM,ANTHEM INC,Gesundheitsversorgung,0.26,New York Stock Exchange Inc.
+MMM,3M,Industrie,0.26,New York Stock Exchange Inc.
+LRCX,LAM RESEARCH CORP,IT,0.25,NASDAQ
+ADI,ANALOG DEVICES INC,IT,0.25,NASDAQ
+ADP,AUTOMATIC DATA PROCESSING INC,IT,0.25,NASDAQ
+COP,CONOCOPHILLIPS,Energie,0.24,New York Stock Exchange Inc.
+MRNA,MODERNA INC,Gesundheitsversorgung,0.24,NASDAQ
+MU,MICRON TECHNOLOGY INC,IT,0.24,NASDAQ
+BKNG,BOOKING HOLDINGS INC,Zyklische Konsumgüter ,0.23,NASDAQ
+TJX,TJX INC,Zyklische Konsumgüter ,0.23,New York Stock Exchange Inc.
+GILD,GILEAD SCIENCES INC,Gesundheitsversorgung,0.22,NASDAQ
+SYK,STRYKER CORP,Gesundheitsversorgung,0.22,New York Stock Exchange Inc.
+MMC,MARSH & MCLENNAN INC,Financials,0.22,New York Stock Exchange Inc.
+GM,GENERAL MOTORS,Zyklische Konsumgüter ,0.22,New York Stock Exchange Inc.
+PNC,PNC FINANCIAL SERVICES GROUP INC,Financials,0.21,New York Stock Exchange Inc.
+MDLZ,MONDELEZ INTERNATIONAL INC CLASS A,Nichtzyklische Konsumgüter,0.21,NASDAQ
+LMT,LOCKHEED MARTIN CORP,Industrie,0.21,New York Stock Exchange Inc.
+CB,CHUBB LTD,Financials,0.21,New York Stock Exchange Inc.
+SHW,SHERWIN WILLIAMS,Materialien,0.21,New York Stock Exchange Inc.
+EL,ESTEE LAUDER INC CLASS A,Nichtzyklische Konsumgüter,0.21,New York Stock Exchange Inc.
+CSX,CSX CORP,Industrie,0.21,NASDAQ
+MO,ALTRIA GROUP INC,Nichtzyklische Konsumgüter,0.21,New York Stock Exchange Inc.
+CCI,CROWN CASTLE INTERNATIONAL REIT CO,Immobilien,0.21,New York Stock Exchange Inc.
+CME,CME GROUP INC CLASS A,Financials,0.21,NASDAQ
+TFC,TRUIST FINANCIAL CORP,Financials,0.2,New York Stock Exchange Inc.
+CHTR,CHARTER COMMUNICATIONS INC CLASS A,Kommunikation,0.2,NASDAQ
+DUK,DUKE ENERGY CORP,Versorger,0.19,New York Stock Exchange Inc.
+USB,US BANCORP,Financials,0.19,New York Stock Exchange Inc.
+F,FORD MOTOR CO,Zyklische Konsumgüter ,0.19,New York Stock Exchange Inc.
+ICE,INTERCONTINENTAL EXCHANGE INC,Financials,0.19,New York Stock Exchange Inc.
+EW,EDWARDS LIFESCIENCES CORP,Gesundheitsversorgung,0.19,New York Stock Exchange Inc.
+CI,CIGNA CORP,Gesundheitsversorgung,0.18,New York Stock Exchange Inc.
+EQIX,EQUINIX REIT INC,Immobilien,0.18,NASDAQ
+NSC,NORFOLK SOUTHERN CORP,Industrie,0.18,New York Stock Exchange Inc.
+BDX,BECTON DICKINSON,Gesundheitsversorgung,0.18,New York Stock Exchange Inc.
+REGN,REGENERON PHARMACEUTICALS INC,Gesundheitsversorgung,0.18,NASDAQ
+ITW,ILLINOIS TOOL INC,Industrie,0.18,New York Stock Exchange Inc.
+SO,SOUTHERN,Versorger,0.17,New York Stock Exchange Inc.
+ETN,EATON PLC,Industrie,0.17,New York Stock Exchange Inc.
+TMUS,T MOBILE US INC,Kommunikation,0.17,NASDAQ
+AON,AON PLC CLASS A,Financials,0.17,New York Stock Exchange Inc.
+COF,CAPITAL ONE FINANCIAL CORP,Financials,0.17,New York Stock Exchange Inc.
+CL,COLGATE-PALMOLIVE,Nichtzyklische Konsumgüter,0.17,New York Stock Exchange Inc.
+APD,AIR PRODUCTS AND CHEMICALS INC,Materialien,0.16,New York Stock Exchange Inc.
+FIS,FIDELITY NATIONAL INFORMATION SERV,IT,0.16,New York Stock Exchange Inc.
+MCO,MOODYS CORP,Financials,0.16,New York Stock Exchange Inc.
+WM,WASTE MANAGEMENT INC,Industrie,0.16,New York Stock Exchange Inc.
+KLAC,KLA CORP,IT,0.16,NASDAQ
+FISV,FISERV INC,IT,0.16,NASDAQ
+D,DOMINION ENERGY INC,Versorger,0.15,New York Stock Exchange Inc.
+FDX,FEDEX CORP,Industrie,0.15,New York Stock Exchange Inc.
+NXPI,NXP SEMICONDUCTORS NV,IT,0.15,NASDAQ
+HCA,HCA HEALTHCARE INC,Gesundheitsversorgung,0.15,New York Stock Exchange Inc.
+ADSK,AUTODESK INC,IT,0.15,NASDAQ
+BSX,BOSTON SCIENTIFIC CORP,Gesundheitsversorgung,0.15,New York Stock Exchange Inc.
+HUM,HUMANA INC,Gesundheitsversorgung,0.15,New York Stock Exchange Inc.
+ECL,ECOLAB INC,Materialien,0.14,New York Stock Exchange Inc.
+FCX,FREEPORT MCMORAN INC,Materialien,0.14,New York Stock Exchange Inc.
+JCI,JOHNSON CONTROLS INTERNATIONAL PLC,Industrie,0.14,New York Stock Exchange Inc.
+PGR,PROGRESSIVE CORP,Financials,0.14,New York Stock Exchange Inc.
+NOC,NORTHROP GRUMMAN CORP,Industrie,0.14,New York Stock Exchange Inc.
+EMR,EMERSON ELECTRIC,Industrie,0.14,New York Stock Exchange Inc.
+DXCM,DEXCOM INC,Gesundheitsversorgung,0.14,NASDAQ
+ILMN,ILLUMINA INC,Gesundheitsversorgung,0.14,NASDAQ
+SNPS,SYNOPSYS INC,IT,0.14,NASDAQ
+VRTX,VERTEX PHARMACEUTICALS INC,Gesundheitsversorgung,0.14,NASDAQ
+XLNX,XILINX INC,IT,0.13,NASDAQ
+DG,DOLLAR GENERAL CORP,Zyklische Konsumgüter ,0.13,New York Stock Exchange Inc.
+INFO,IHS MARKIT LTD,Industrie,0.13,New York Stock Exchange Inc.
+PSA,PUBLIC STORAGE REIT,Immobilien,0.13,New York Stock Exchange Inc.
+EXC,EXELON CORP,Versorger,0.13,NASDAQ
+EOG,EOG RESOURCES INC,Energie,0.13,New York Stock Exchange Inc.
+IDXX,IDEXX LABORATORIES INC,Gesundheitsversorgung,0.13,NASDAQ
+IQV,IQVIA HOLDINGS INC,Gesundheitsversorgung,0.13,New York Stock Exchange Inc.
+TEL,TE CONNECTIVITY LTD,IT,0.13,New York Stock Exchange Inc.
+MSCI,MSCI INC,Financials,0.13,New York Stock Exchange Inc.
+SPG,SIMON PROPERTY GROUP REIT INC,Immobilien,0.13,New York Stock Exchange Inc.
+CDNS,CADENCE DESIGN SYSTEMS INC,IT,0.13,NASDAQ
+APH,AMPHENOL CORP CLASS A,IT,0.13,New York Stock Exchange Inc.
+ALGN,ALIGN TECHNOLOGY INC,Gesundheitsversorgung,0.12,NASDAQ
+ROP,ROPER TECHNOLOGIES INC,Industrie,0.12,New York Stock Exchange Inc.
+CARR,CARRIER GLOBAL CORP,Industrie,0.12,New York Stock Exchange Inc.
+CMG,CHIPOTLE MEXICAN GRILL INC,Zyklische Konsumgüter ,0.12,New York Stock Exchange Inc.
+TT,TRANE TECHNOLOGIES PLC,Industrie,0.12,New York Stock Exchange Inc.
+MCHP,MICROCHIP TECHNOLOGY INC,IT,0.12,NASDAQ
+AIG,AMERICAN INTERNATIONAL GROUP INC,Financials,0.12,New York Stock Exchange Inc.
+A,AGILENT TECHNOLOGIES INC,Gesundheitsversorgung,0.12,New York Stock Exchange Inc.
+GD,GENERAL DYNAMICS CORP,Industrie,0.12,New York Stock Exchange Inc.
+DLR,DIGITAL REALTY TRUST REIT INC,Immobilien,0.12,New York Stock Exchange Inc.
+ORLY,OREILLY AUTOMOTIVE INC,Zyklische Konsumgüter ,0.12,NASDAQ
+ATVI,ACTIVISION BLIZZARD INC,Kommunikation,0.12,NASDAQ
+KMB,KIMBERLY CLARK CORP,Nichtzyklische Konsumgüter,0.12,New York Stock Exchange Inc.
+BK,BANK OF NEW YORK MELLON CORP,Financials,0.11,New York Stock Exchange Inc.
+TROW,T ROWE PRICE GROUP INC,Financials,0.11,NASDAQ
+APTV,APTIV PLC,Zyklische Konsumgüter ,0.11,New York Stock Exchange Inc.
+NEM,NEWMONT,Materialien,0.11,New York Stock Exchange Inc.
+MET,METLIFE INC,Financials,0.11,New York Stock Exchange Inc.
+MSI,MOTOROLA SOLUTIONS INC,IT,0.11,New York Stock Exchange Inc.
+CNC,CENTENE CORP,Gesundheitsversorgung,0.11,New York Stock Exchange Inc.
+LHX,L3HARRIS TECHNOLOGIES INC,Industrie,0.11,New York Stock Exchange Inc.
+HPQ,HP INC,IT,0.11,New York Stock Exchange Inc.
+EBAY,EBAY INC,Zyklische Konsumgüter ,0.11,NASDAQ
+FTNT,FORTINET INC,IT,0.11,NASDAQ
+MAR,MARRIOTT INTERNATIONAL INC CLASS A,Zyklische Konsumgüter ,0.11,NASDAQ
+SLB,SCHLUMBERGER NV,Energie,0.11,New York Stock Exchange Inc.
+CTSH,COGNIZANT TECHNOLOGY SOLUTIONS COR,IT,0.11,NASDAQ
+AZO,AUTOZONE INC,Zyklische Konsumgüter ,0.11,New York Stock Exchange Inc.
+AEP,AMERICAN ELECTRIC POWER INC,Versorger,0.11,NASDAQ
+PXD,PIONEER NATURAL RESOURCE,Energie,0.1,New York Stock Exchange Inc.
+SIVB,SVB FINANCIAL GROUP,Financials,0.1,NASDAQ
+PRU,PRUDENTIAL FINANCIAL INC,Financials,0.1,New York Stock Exchange Inc.
+DD,DUPONT DE NEMOURS INC,Materialien,0.1,New York Stock Exchange Inc.
+PH,PARKER-HANNIFIN CORP,Industrie,0.1,New York Stock Exchange Inc.
+DOW,DOW INC,Materialien,0.1,New York Stock Exchange Inc.
+MPC,MARATHON PETROLEUM CORP,Energie,0.1,New York Stock Exchange Inc.
+SRE,SEMPRA,Versorger,0.1,New York Stock Exchange Inc.
+HLT,HILTON WORLDWIDE HOLDINGS INC,Zyklische Konsumgüter ,0.1,New York Stock Exchange Inc.
+BAX,BAXTER INTERNATIONAL INC,Gesundheitsversorgung,0.1,New York Stock Exchange Inc.
+ROK,ROCKWELL AUTOMATION INC,Industrie,0.1,New York Stock Exchange Inc.
+ROST,ROSS STORES INC,Zyklische Konsumgüter ,0.1,NASDAQ
+CTAS,CINTAS CORP,Industrie,0.1,NASDAQ
+YUM,YUM BRANDS INC,Zyklische Konsumgüter ,0.1,New York Stock Exchange Inc.
+STZ,CONSTELLATION BRANDS INC CLASS A,Nichtzyklische Konsumgüter,0.1,New York Stock Exchange Inc.
+PAYX,PAYCHEX INC,IT,0.1,NASDAQ
+PPG,PPG INDUSTRIES INC,Materialien,0.1,New York Stock Exchange Inc.
+GIS,GENERAL MILLS INC,Nichtzyklische Konsumgüter,0.1,New York Stock Exchange Inc.
+SBAC,SBA COMMUNICATIONS REIT CORP CLASS,Immobilien,0.1,NASDAQ
+RMD,RESMED INC,Gesundheitsversorgung,0.1,New York Stock Exchange Inc.
+TRV,TRAVELERS COMPANIES INC,Financials,0.1,New York Stock Exchange Inc.
+SYY,SYSCO CORP,Nichtzyklische Konsumgüter,0.1,New York Stock Exchange Inc.
+GPN,GLOBAL PAYMENTS INC,IT,0.09,New York Stock Exchange Inc.
+O,REALTY INCOME REIT CORP,Immobilien,0.09,New York Stock Exchange Inc.
+FRC,FIRST REPUBLIC BANK,Financials,0.09,New York Stock Exchange Inc.
+TWTR,TWITTER INC,Kommunikation,0.09,New York Stock Exchange Inc.
+KEYS,KEYSIGHT TECHNOLOGIES INC,IT,0.09,New York Stock Exchange Inc.
+OTIS,OTIS WORLDWIDE CORP,Industrie,0.09,New York Stock Exchange Inc.
+IFF,INTERNATIONAL FLAVORS & FRAGRANCES,Materialien,0.09,New York Stock Exchange Inc.
+MTD,METTLER TOLEDO INC,Gesundheitsversorgung,0.09,New York Stock Exchange Inc.
+MTCH,MATCH GROUP INC,Kommunikation,0.09,NASDAQ
+VRSK,VERISK ANALYTICS INC,Industrie,0.09,NASDAQ
+XEL,XCEL ENERGY INC,Versorger,0.09,NASDAQ
+FAST,FASTENAL,Industrie,0.09,NASDAQ
+MCK,MCKESSON CORP,Gesundheitsversorgung,0.09,New York Stock Exchange Inc.
+WELL,WELLTOWER INC,Immobilien,0.09,New York Stock Exchange Inc.
+EA,ELECTRONIC ARTS INC,Kommunikation,0.09,NASDAQ
+EFX,EQUIFAX INC,Industrie,0.09,New York Stock Exchange Inc.
+ADM,ARCHER DANIELS MIDLAND,Nichtzyklische Konsumgüter,0.09,New York Stock Exchange Inc.
+AFL,AFLAC INC,Financials,0.09,New York Stock Exchange Inc.
+CTVA,CORTEVA INC,Materialien,0.09,New York Stock Exchange Inc.
+WBA,WALGREEN BOOTS ALLIANCE INC,Nichtzyklische Konsumgüter,0.09,NASDAQ
+DHI,D R HORTON INC,Zyklische Konsumgüter ,0.09,New York Stock Exchange Inc.
+BIIB,BIOGEN INC,Gesundheitsversorgung,0.09,NASDAQ
+DFS,DISCOVER FINANCIAL SERVICES,Financials,0.09,New York Stock Exchange Inc.
+CBRE,CBRE GROUP INC CLASS A,Immobilien,0.09,New York Stock Exchange Inc.
+ANSS,ANSYS INC,IT,0.09,NASDAQ
+STT,STATE STREET CORP,Financials,0.09,New York Stock Exchange Inc.
+AJG,ARTHUR J GALLAGHER,Financials,0.09,New York Stock Exchange Inc.
+AVB,AVALONBAY COMMUNITIES REIT INC,Immobilien,0.09,New York Stock Exchange Inc.
+AMP,AMERIPRISE FINANCE INC,Financials,0.09,New York Stock Exchange Inc.
+ODFL,OLD DOMINION FREIGHT LINE INC,Industrie,0.08,NASDAQ
+MNST,MONSTER BEVERAGE CORP,Nichtzyklische Konsumgüter,0.08,NASDAQ
+NUE,NUCOR CORP,Materialien,0.08,New York Stock Exchange Inc.
+AME,AMETEK INC,Industrie,0.08,New York Stock Exchange Inc.
+WMB,WILLIAMS INC,Energie,0.08,New York Stock Exchange Inc.
+PEG,PUBLIC SERVICE ENTERPRISE GROUP IN,Versorger,0.08,New York Stock Exchange Inc.
+DLTR,DOLLAR TREE INC,Zyklische Konsumgüter ,0.08,NASDAQ
+LEN,LENNAR A CORP,Zyklische Konsumgüter ,0.08,New York Stock Exchange Inc.
+ZBRA,ZEBRA TECHNOLOGIES CORP CLASS A,IT,0.08,NASDAQ
+AWK,AMERICAN WATER WORKS INC,Versorger,0.08,New York Stock Exchange Inc.
+ALL,ALLSTATE CORP,Financials,0.08,New York Stock Exchange Inc.
+WST,WEST PHARMACEUTICAL SERVICES INC,Gesundheitsversorgung,0.08,New York Stock Exchange Inc.
+TDG,TRANSDIGM GROUP INC,Industrie,0.08,New York Stock Exchange Inc.
+PSX,PHILLIPS,Energie,0.08,New York Stock Exchange Inc.
+CPRT,COPART INC,Industrie,0.08,NASDAQ
+CMI,CUMMINS INC,Industrie,0.08,New York Stock Exchange Inc.
+KMI,KINDER MORGAN INC,Energie,0.08,New York Stock Exchange Inc.
+SWK,STANLEY BLACK & DECKER INC,Industrie,0.08,New York Stock Exchange Inc.
+PCAR,PACCAR INC,Industrie,0.08,NASDAQ
+BLL,BALL CORP,Materialien,0.08,New York Stock Exchange Inc.
+FITB,FIFTH THIRD BANCORP,Financials,0.08,NASDAQ
+ES,EVERSOURCE ENERGY,Versorger,0.08,New York Stock Exchange Inc.
+ALB,ALBEMARLE CORP,Materialien,0.08,New York Stock Exchange Inc.
+ETSY,ETSY INC,Zyklische Konsumgüter ,0.08,NASDAQ
+WLTW,WILLIS TOWERS WATSON PLC,Financials,0.08,NASDAQ
+WY,WEYERHAEUSER REIT,Immobilien,0.08,New York Stock Exchange Inc.
+KR,KROGER,Nichtzyklische Konsumgüter,0.07,New York Stock Exchange Inc.
+EQR,EQUITY RESIDENTIAL REIT,Immobilien,0.07,New York Stock Exchange Inc.
+ENPH,ENPHASE ENERGY INC,IT,0.07,NASDAQ
+WEC,WEC ENERGY GROUP INC,Versorger,0.07,New York Stock Exchange Inc.
+ARE,ALEXANDRIA REAL ESTATE EQUITIES RE,Immobilien,0.07,New York Stock Exchange Inc.
+ED,CONSOLIDATED EDISON INC,Versorger,0.07,New York Stock Exchange Inc.
+GLW,CORNING INC,IT,0.07,New York Stock Exchange Inc.
+ANET,ARISTA NETWORKS INC,IT,0.07,New York Stock Exchange Inc.
+VLO,VALERO ENERGY CORP,Energie,0.07,New York Stock Exchange Inc.
+RSG,REPUBLIC SERVICES INC,Industrie,0.07,New York Stock Exchange Inc.
+OKE,ONEOK INC,Energie,0.07,New York Stock Exchange Inc.
+EXR,EXTRA SPACE STORAGE REIT INC,Immobilien,0.07,New York Stock Exchange Inc.
+SYF,SYNCHRONY FINANCIAL,Financials,0.07,New York Stock Exchange Inc.
+LH,LABORATORY CORPORATION OF AMERICA,Gesundheitsversorgung,0.07,New York Stock Exchange Inc.
+FTV,FORTIVE CORP,Industrie,0.07,New York Stock Exchange Inc.
+KSU,KANSAS CITY SOUTHERN,Industrie,0.07,New York Stock Exchange Inc.
+HSY,HERSHEY FOODS,Nichtzyklische Konsumgüter,0.07,New York Stock Exchange Inc.
+OXY,OCCIDENTAL PETROLEUM CORP,Energie,0.07,New York Stock Exchange Inc.
+VMC,VULCAN MATERIALS,Materialien,0.07,New York Stock Exchange Inc.
+CDW,CDW CORP,IT,0.07,NASDAQ
+MLM,MARTIN MARIETTA MATERIALS INC,Materialien,0.07,New York Stock Exchange Inc.
+DVN,DEVON ENERGY CORP,Energie,0.07,New York Stock Exchange Inc.
+TSCO,TRACTOR SUPPLY,Zyklische Konsumgüter ,0.07,NASDAQ
+SWKS,SKYWORKS SOLUTIONS INC,IT,0.07,NASDAQ
+ZBH,ZIMMER BIOMET HOLDINGS INC,Gesundheitsversorgung,0.07,New York Stock Exchange Inc.
+TER,TERADYNE INC,IT,0.07,NASDAQ
+IT,GARTNER INC,IT,0.07,New York Stock Exchange Inc.
+URI,UNITED RENTALS INC,Industrie,0.07,New York Stock Exchange Inc.
+LUV,SOUTHWEST AIRLINES,Industrie,0.06,New York Stock Exchange Inc.
+EIX,EDISON INTERNATIONAL,Versorger,0.06,New York Stock Exchange Inc.
+NTRS,NORTHERN TRUST CORP,Financials,0.06,NASDAQ
+MAA,MID AMERICA APARTMENT COMMUNITIES,Immobilien,0.06,New York Stock Exchange Inc.
+EXPE,EXPEDIA GROUP INC,Zyklische Konsumgüter ,0.06,NASDAQ
+DOV,DOVER CORP,Industrie,0.06,New York Stock Exchange Inc.
+TSN,TYSON FOODS INC CLASS A,Nichtzyklische Konsumgüter,0.06,New York Stock Exchange Inc.
+DAL,DELTA AIR LINES INC,Industrie,0.06,New York Stock Exchange Inc.
+VFC,VF CORP,Zyklische Konsumgüter ,0.06,New York Stock Exchange Inc.
+IR,INGERSOLL RAND INC,Industrie,0.06,New York Stock Exchange Inc.
+KMX,CARMAX INC,Zyklische Konsumgüter ,0.06,New York Stock Exchange Inc.
+NDAQ,NASDAQ INC,Financials,0.06,NASDAQ
+KHC,KRAFT HEINZ,Nichtzyklische Konsumgüter,0.06,NASDAQ
+LYB,LYONDELLBASELL INDUSTRIES NV CLASS,Materialien,0.06,New York Stock Exchange Inc.
+HIG,HARTFORD FINANCIAL SERVICES GROUP,Financials,0.06,New York Stock Exchange Inc.
+CHD,CHURCH AND DWIGHT INC,Nichtzyklische Konsumgüter,0.06,New York Stock Exchange Inc.
+VRSN,VERISIGN INC,IT,0.06,NASDAQ
+BBY,BEST BUY INC,Zyklische Konsumgüter ,0.06,New York Stock Exchange Inc.
+STE,STERIS,Gesundheitsversorgung,0.06,New York Stock Exchange Inc.
+DRE,DUKE REALTY REIT CORP,Immobilien,0.06,New York Stock Exchange Inc.
+GNRC,GENERAC HOLDINGS INC,Industrie,0.06,New York Stock Exchange Inc.
+HBAN,HUNTINGTON BANCSHARES INC,Financials,0.06,NASDAQ
+ESS,ESSEX PROPERTY TRUST REIT INC,Immobilien,0.06,New York Stock Exchange Inc.
+DTE,DTE ENERGY,Versorger,0.06,New York Stock Exchange Inc.
+CERN,CERNER CORP,Gesundheitsversorgung,0.06,NASDAQ
+AEE,AMEREN CORP,Versorger,0.06,New York Stock Exchange Inc.
+MKC,MCCORMICK & CO NON-VOTING INC,Nichtzyklische Konsumgüter,0.06,New York Stock Exchange Inc.
+ULTA,ULTA BEAUTY INC,Zyklische Konsumgüter ,0.06,NASDAQ
+XYL,XYLEM INC,Industrie,0.06,New York Stock Exchange Inc.
+MPWR,MONOLITHIC POWER SYSTEMS INC,IT,0.06,NASDAQ
+GWW,WW GRAINGER INC,Industrie,0.06,New York Stock Exchange Inc.
+PPL,PPL CORP,Versorger,0.06,New York Stock Exchange Inc.
+POOL,POOL CORP,Zyklische Konsumgüter ,0.06,NASDAQ
+KEY,KEYCORP,Financials,0.06,New York Stock Exchange Inc.
+TRMB,TRIMBLE INC,IT,0.05,NASDAQ
+EXPD,EXPEDITORS INTERNATIONAL OF WASHIN,Industrie,0.05,NASDAQ
+HES,HESS CORP,Energie,0.05,New York Stock Exchange Inc.
+STX,SEAGATE TECHNOLOGY HOLDINGS PLC,IT,0.05,NASDAQ
+FE,FIRSTENERGY CORP,Versorger,0.05,New York Stock Exchange Inc.
+ETR,ENTERGY CORP,Versorger,0.05,New York Stock Exchange Inc.
+RF,REGIONS FINANCIAL CORP,Financials,0.05,New York Stock Exchange Inc.
+WAT,WATER CORP,Gesundheitsversorgung,0.05,New York Stock Exchange Inc.
+CTLT,CATALENT INC,Gesundheitsversorgung,0.05,New York Stock Exchange Inc.
+HAL,HALLIBURTON,Energie,0.05,New York Stock Exchange Inc.
+TYL,TYLER TECHNOLOGIES INC,IT,0.05,New York Stock Exchange Inc.
+PKI,PERKINELMER INC,Gesundheitsversorgung,0.05,New York Stock Exchange Inc.
+BKR,BAKER HUGHES CLASS A,Energie,0.05,NASDAQ
+GRMN,GARMIN LTD,Zyklische Konsumgüter ,0.05,New York Stock Exchange Inc.
+CLX,CLOROX,Nichtzyklische Konsumgüter,0.05,New York Stock Exchange Inc.
+BR,BROADRIDGE FINANCIAL SOLUTIONS INC,IT,0.05,New York Stock Exchange Inc.
+PAYC,PAYCOM SOFTWARE INC,IT,0.05,New York Stock Exchange Inc.
+CFG,CITIZENS FINANCIAL GROUP INC,Financials,0.05,New York Stock Exchange Inc.
+HPE,HEWLETT PACKARD ENTERPRISE,IT,0.05,New York Stock Exchange Inc.
+COO,COOPER INC,Gesundheitsversorgung,0.05,New York Stock Exchange Inc.
+NVR,NVR INC,Zyklische Konsumgüter ,0.05,New York Stock Exchange Inc.
+TDY,TELEDYNE TECHNOLOGIES INC,IT,0.05,New York Stock Exchange Inc.
+BBWI,BATH AND BODY WORKS INC,Zyklische Konsumgüter ,0.05,New York Stock Exchange Inc.
+NTAP,NETAPP INC,IT,0.05,NASDAQ
+MTB,M&T BANK CORP,Financials,0.05,New York Stock Exchange Inc.
+DRI,DARDEN RESTAURANTS INC,Zyklische Konsumgüter ,0.05,New York Stock Exchange Inc.
+VTR,VENTAS REIT INC,Immobilien,0.05,New York Stock Exchange Inc.
+DPZ,DOMINOS PIZZA INC,Zyklische Konsumgüter ,0.05,New York Stock Exchange Inc.
+CZR,CAESARS ENTERTAINMENT INC,Zyklische Konsumgüter ,0.05,NASDAQ
+GPC,GENUINE PARTS,Zyklische Konsumgüter ,0.05,New York Stock Exchange Inc.
+TTWO,TAKE TWO INTERACTIVE SOFTWARE INC,Kommunikation,0.05,NASDAQ
+DGX,QUEST DIAGNOSTICS INC,Gesundheitsversorgung,0.05,New York Stock Exchange Inc.
+HOLX,HOLOGIC INC,Gesundheitsversorgung,0.05,NASDAQ
+VIAC,VIACOMCBS INC CLASS B,Kommunikation,0.05,NASDAQ
+FANG,DIAMONDBACK ENERGY INC,Energie,0.05,NASDAQ
+J,JACOBS ENGINEERING GROUP INC,Industrie,0.05,New York Stock Exchange Inc.
+FLT,FLEETCOR TECHNOLOGIES INC,IT,0.05,New York Stock Exchange Inc.
+PEAK,HEALTHPEAK PROPERTIES INC,Immobilien,0.05,New York Stock Exchange Inc.
+TECH,BIO TECHNE CORP,Gesundheitsversorgung,0.05,NASDAQ
+AKAM,AKAMAI TECHNOLOGIES INC,IT,0.05,NASDAQ
+IP,INTERNATIONAL PAPER,Materialien,0.05,New York Stock Exchange Inc.
+CMS,CMS ENERGY CORP,Versorger,0.05,New York Stock Exchange Inc.
+ABC,AMERISOURCEBERGEN CORP,Gesundheitsversorgung,0.05,New York Stock Exchange Inc.
+RJF,RAYMOND JAMES INC,Financials,0.05,New York Stock Exchange Inc.
+CRL,CHARLES RIVER LABORATORIES INTERNA,Gesundheitsversorgung,0.05,New York Stock Exchange Inc.
+IEX,IDEX CORP,Industrie,0.05,New York Stock Exchange Inc.
+CE,CELANESE CORP,Materialien,0.05,New York Stock Exchange Inc.
+PFG,PRINCIPAL FINANCIAL GROUP INC,Financials,0.04,NASDAQ
+AMCR,AMCOR PLC,Materialien,0.04,New York Stock Exchange Inc.
+QRVO,QORVO INC,IT,0.04,NASDAQ
+WDC,WESTERN DIGITAL CORP,IT,0.04,NASDAQ
+AVY,AVERY DENNISON CORP,Materialien,0.04,New York Stock Exchange Inc.
+WAB,WESTINGHOUSE AIR BRAKE TECHNOLOGIE,Industrie,0.04,New York Stock Exchange Inc.
+CINF,CINCINNATI FINANCIAL CORP,Financials,0.04,NASDAQ
+TXT,TEXTRON INC,Industrie,0.04,New York Stock Exchange Inc.
+MAS,MASCO CORP,Industrie,0.04,New York Stock Exchange Inc.
+CTRA,COTERRA ENERGY INC,Energie,0.04,New York Stock Exchange Inc.
+MGM,MGM RESORTS INTERNATIONAL,Zyklische Konsumgüter ,0.04,New York Stock Exchange Inc.
+RCL,ROYAL CARIBBEAN GROUP LTD,Zyklische Konsumgüter ,0.04,New York Stock Exchange Inc.
+JBHT,JB HUNT TRANSPORT SERVICES INC,Industrie,0.04,NASDAQ
+AES,AES CORP,Versorger,0.04,New York Stock Exchange Inc.
+BXP,BOSTON PROPERTIES REIT INC,Immobilien,0.04,New York Stock Exchange Inc.
+UDR,UDR REIT INC,Immobilien,0.04,New York Stock Exchange Inc.
+BIO,BIO RAD LABORATORIES INC CLASS A,Gesundheitsversorgung,0.04,New York Stock Exchange Inc.
+CNP,CENTERPOINT ENERGY INC,Versorger,0.04,New York Stock Exchange Inc.
+PWR,QUANTA SERVICES INC,Industrie,0.04,New York Stock Exchange Inc.
+EMN,EASTMAN CHEMICAL,Materialien,0.04,New York Stock Exchange Inc.
+K,KELLOGG,Nichtzyklische Konsumgüter,0.04,New York Stock Exchange Inc.
+BRO,BROWN & BROWN INC,Financials,0.04,New York Stock Exchange Inc.
+LKQ,LKQ CORP,Zyklische Konsumgüter ,0.04,NASDAQ
+AAP,ADVANCE AUTO PARTS INC,Zyklische Konsumgüter ,0.04,New York Stock Exchange Inc.
+CCL,CARNIVAL CORP,Zyklische Konsumgüter ,0.04,New York Stock Exchange Inc.
+CAG,CONAGRA BRANDS INC,Nichtzyklische Konsumgüter,0.04,New York Stock Exchange Inc.
+EVRG,EVERGY INC,Versorger,0.04,New York Stock Exchange Inc.
+VTRS,VIATRIS INC,Gesundheitsversorgung,0.04,NASDAQ
+TFX,TELEFLEX INC,Gesundheitsversorgung,0.04,New York Stock Exchange Inc.
+OMC,OMNICOM GROUP INC,Kommunikation,0.04,New York Stock Exchange Inc.
+FBHS,FORTUNE BRANDS HOME AND SECURITY I,Industrie,0.04,New York Stock Exchange Inc.
+LYV,LIVE NATION ENTERTAINMENT INC,Kommunikation,0.04,New York Stock Exchange Inc.
+LNT,ALLIANT ENERGY CORP,Versorger,0.04,NASDAQ
+UAL,UNITED AIRLINES HOLDINGS INC,Industrie,0.04,NASDAQ
+PHM,PULTEGROUP INC,Zyklische Konsumgüter ,0.04,New York Stock Exchange Inc.
+IPG,INTERPUBLIC GROUP OF COMPANIES INC,Kommunikation,0.04,New York Stock Exchange Inc.
+MKTX,MARKETAXESS HOLDINGS INC,Financials,0.04,NASDAQ
+SJM,JM SMUCKER,Nichtzyklische Konsumgüter,0.04,New York Stock Exchange Inc.
+WHR,WHIRLPOOL CORP,Zyklische Konsumgüter ,0.04,New York Stock Exchange Inc.
+CAH,CARDINAL HEALTH INC,Gesundheitsversorgung,0.04,New York Stock Exchange Inc.
+ABMD,ABIOMED INC,Gesundheitsversorgung,0.04,NASDAQ
+CDAY,CERIDIAN HCM HOLDING INC,IT,0.04,New York Stock Exchange Inc.
+KIM,KIMCO REALTY REIT CORP,Immobilien,0.04,New York Stock Exchange Inc.
+FMC,FMC CORP,Materialien,0.04,New York Stock Exchange Inc.
+CBOE,CBOE GLOBAL MARKETS INC,Financials,0.04,Cboe BZX formerly known as BATS
+NLOK,NORTONLIFELOCK INC,IT,0.03,NASDAQ
+IRM,IRON MOUNTAIN INC,Immobilien,0.03,New York Stock Exchange Inc.
+FFIV,F5 INC,IT,0.03,NASDAQ
+CHRW,CH ROBINSON WORLDWIDE INC,Industrie,0.03,NASDAQ
+MOS,MOSAIC,Materialien,0.03,New York Stock Exchange Inc.
+LVS,LAS VEGAS SANDS CORP,Zyklische Konsumgüter ,0.03,New York Stock Exchange Inc.
+BFB,BROWN FORMAN CORP CLASS B,Nichtzyklische Konsumgüter,0.03,New York Stock Exchange Inc.
+HAS,HASBRO INC,Zyklische Konsumgüter ,0.03,NASDAQ
+HRL,HORMEL FOODS CORP,Nichtzyklische Konsumgüter,0.03,New York Stock Exchange Inc.
+MRO,MARATHON OIL CORP,Energie,0.03,New York Stock Exchange Inc.
+PTC,PTC INC,IT,0.03,NASDAQ
+LDOS,LEIDOS HOLDINGS INC,Industrie,0.03,New York Stock Exchange Inc.
+CF,CF INDUSTRIES HOLDINGS INC,Materialien,0.03,New York Stock Exchange Inc.
+ATO,ATMOS ENERGY CORP,Versorger,0.03,New York Stock Exchange Inc.
+INCY,INCYTE CORP,Gesundheitsversorgung,0.03,NASDAQ
+LNC,LINCOLN NATIONAL CORP,Financials,0.03,New York Stock Exchange Inc.
+RHI,ROBERT HALF,Industrie,0.03,New York Stock Exchange Inc.
+PKG,PACKAGING CORP OF AMERICA,Materialien,0.03,New York Stock Exchange Inc.
+PNR,PENTAIR,Industrie,0.03,New York Stock Exchange Inc.
+TPR,TAPESTRY INC,Zyklische Konsumgüter ,0.03,New York Stock Exchange Inc.
+HWM,HOWMET AEROSPACE INC,Industrie,0.03,New York Stock Exchange Inc.
+FOXA,FOX CORP CLASS A,Kommunikation,0.03,NASDAQ
+LUMN,LUMEN TECHNOLOGIES INC,Kommunikation,0.03,New York Stock Exchange Inc.
+HST,HOST HOTELS & RESORTS REIT INC,Immobilien,0.03,NASDAQ
+ALLE,ALLEGION PLC,Industrie,0.03,New York Stock Exchange Inc.
+WRK,WESTROCK,Materialien,0.03,New York Stock Exchange Inc.
+JKHY,JACK HENRY AND ASSOCIATES INC,IT,0.03,NASDAQ
+SNA,SNAP ON INC,Industrie,0.03,New York Stock Exchange Inc.
+AAL,AMERICAN AIRLINES GROUP INC,Industrie,0.03,NASDAQ
+XRAY,DENTSPLY SIRONA INC,Gesundheitsversorgung,0.03,NASDAQ
+L,LOEWS CORP,Financials,0.03,New York Stock Exchange Inc.
+REG,REGENCY CENTERS REIT CORP,Immobilien,0.03,NASDAQ
+CMA,COMERICA INC,Financials,0.03,New York Stock Exchange Inc.
+WRB,WR BERKLEY CORP,Financials,0.03,New York Stock Exchange Inc.
+AOS,A O SMITH CORP,Industrie,0.03,New York Stock Exchange Inc.
+BWA,BORGWARNER INC,Zyklische Konsumgüter ,0.03,New York Stock Exchange Inc.
+RE,EVEREST RE GROUP LTD,Financials,0.03,New York Stock Exchange Inc.
+HSIC,HENRY SCHEIN INC,Gesundheitsversorgung,0.03,NASDAQ
+JNPR,JUNIPER NETWORKS INC,IT,0.03,New York Stock Exchange Inc.
+ZION,ZIONS BANCORPORATION,Financials,0.03,NASDAQ
+CTXS,CITRIX SYSTEMS INC,IT,0.03,NASDAQ
+NI,NISOURCE INC,Versorger,0.03,New York Stock Exchange Inc.
+MHK,MOHAWK INDUSTRIES INC,Zyklische Konsumgüter ,0.03,New York Stock Exchange Inc.
+UHS,UNIVERSAL HEALTH SERVICES INC CLAS,Gesundheitsversorgung,0.03,New York Stock Exchange Inc.
+APA,APA CORP,Energie,0.02,NASDAQ
+SEE,SEALED AIR CORP,Materialien,0.02,New York Stock Exchange Inc.
+AIZ,ASSURANT INC,Financials,0.02,New York Stock Exchange Inc.
+NRG,NRG ENERGY INC,Versorger,0.02,New York Stock Exchange Inc.
+FRT,FEDERAL REALTY INVESTMENT TRUST RE,Immobilien,0.02,New York Stock Exchange Inc.
+WYNN,WYNN RESORTS LTD,Zyklische Konsumgüter ,0.02,NASDAQ
+BEN,FRANKLIN RESOURCES INC,Financials,0.02,New York Stock Exchange Inc.
+GL,GLOBE LIFE INC,Financials,0.02,New York Stock Exchange Inc.
+NWL,NEWELL BRANDS INC,Zyklische Konsumgüter ,0.02,NASDAQ
+TAP,MOLSON COORS BREWING CLASS B,Nichtzyklische Konsumgüter,0.02,New York Stock Exchange Inc.
+CPB,CAMPBELL SOUP,Nichtzyklische Konsumgüter,0.02,New York Stock Exchange Inc.
+PENN,PENN NATIONAL GAMING INC,Zyklische Konsumgüter ,0.02,NASDAQ
+NWSA,NEWS CORP CLASS A,Kommunikation,0.02,NASDAQ
+LW,LAMB WESTON HOLDINGS INC,Nichtzyklische Konsumgüter,0.02,New York Stock Exchange Inc.
+DISH,DISH NETWORK CORP CLASS A,Kommunikation,0.02,NASDAQ
+NCLH,NORWEGIAN CRUISE LINE HOLDINGS LTD,Zyklische Konsumgüter ,0.02,New York Stock Exchange Inc.
+IVZ,INVESCO LTD,Financials,0.02,New York Stock Exchange Inc.
+DXC,DXC TECHNOLOGY,IT,0.02,New York Stock Exchange Inc.
+HII,HUNTINGTON INGALLS INDUSTRIES INC,Industrie,0.02,New York Stock Exchange Inc.
+PNW,PINNACLE WEST CORP,Versorger,0.02,New York Stock Exchange Inc.
+PBCT,PEOPLES UNITED FINANCIAL INC,Financials,0.02,NASDAQ
+WU,WESTERN UNION,IT,0.02,New York Stock Exchange Inc.
+NLSN,NIELSEN HOLDINGS PLC,Industrie,0.02,New York Stock Exchange Inc.
+PVH,PVH CORP,Zyklische Konsumgüter ,0.02,New York Stock Exchange Inc.
+OGN,ORGANON,Gesundheitsversorgung,0.02,New York Stock Exchange Inc.
+ROL,ROLLINS INC,Industrie,0.02,New York Stock Exchange Inc.
+DVA,DAVITA INC,Gesundheitsversorgung,0.02,New York Stock Exchange Inc.
+DISCK,DISCOVERY INC SERIES C,Kommunikation,0.02,NASDAQ
+VNO,VORNADO REALTY TRUST REIT,Immobilien,0.02,New York Stock Exchange Inc.
+ALK,ALASKA AIR GROUP INC,Industrie,0.02,New York Stock Exchange Inc.
+HBI,HANESBRANDS INC,Zyklische Konsumgüter ,0.02,New York Stock Exchange Inc.
+IPGP,IPG PHOTONICS CORP,IT,0.02,NASDAQ
+RL,RALPH LAUREN CORP CLASS A,Zyklische Konsumgüter ,0.01,New York Stock Exchange Inc.
+LEG,LEGGETT & PLATT INC,Zyklische Konsumgüter ,0.01,New York Stock Exchange Inc.
+FOX,FOX CORP CLASS B,Kommunikation,0.01,NASDAQ
+UAA,UNDER ARMOUR INC CLASS A,Zyklische Konsumgüter ,0.01,New York Stock Exchange Inc.
+DISCA,DISCOVERY INC SERIES A,Kommunikation,0.01,NASDAQ
+UA,UNDER ARMOUR INC CLASS C,Zyklische Konsumgüter ,0.01,New York Stock Exchange Inc.
+GPS,GAP INC,Zyklische Konsumgüter ,0.01,New York Stock Exchange Inc.
+NWS,NEWS CORP CLASS B,Kommunikation,0.01,NASDAQ
