@@ -10,7 +10,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('',home_view,name='home'),
     path('sp500/', include('sp500.urls'), name='sp500'),
-    path('inerest_rate/', include('interest_rate.urls'), name='interest_rate'),
+    #path('inerest_rate/', include('interest_rate.urls'), name='interest_rate'),
 ]
 
 

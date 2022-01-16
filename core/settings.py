@@ -41,7 +41,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
 
     'sp500',
-    'inerest_rate',
+    'interest_rate',
 ]
 
 MIDDLEWARE = [
