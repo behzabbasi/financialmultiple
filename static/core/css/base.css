@@ -52,3 +52,37 @@ body {
   text-transform: uppercase;
 }
 
+
+
+.link-tabs {
+    -webkit-tap-highlight-color: transparent;
+    padding:10px
+}
+
+.link-tabs li {
+    display: inline-block;
+    margin: 0 5px 10px 0;
+    font-size:16px
+}
+
+.link-tabs li a {
+    display: block;
+    padding: 8px 10px;
+    color: #333;
+    background: #fff;
+    border:1px solid #FF6464;
+    border-radius: 5px;
+    
+}
+
+.link-tabs li a:hover {
+    color: #f98404;
+    border-color:#fdce9b;
+    border-radius: 5px;
+}
+
+.link-tabs li a.on {
+    color: #333;
+    background: #fdce9b;
+    border-color:#f98404;
+}

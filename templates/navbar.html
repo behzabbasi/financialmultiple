@@ -7,23 +7,23 @@
     <div class="collapse navbar-collapse" id="navbarNavDropdown">
       <ul class="navbar-nav">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
+          <a class="nav-link active" aria-current="page" href="{% url 'home' %}">Home</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="{% url 'sp500:sp500_view' %}">S&P 500</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Interest rate</a>
+          <a class="nav-link" href="{% url 'interest_rate:interest_rate_tbill_view' %}">Interest rate</a>
         </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            S&P 500
-          </a>
-          <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-            <li><a class="dropdown-item" href="#">S&P 500 Price to sales</a></li>
-            <li><a class="dropdown-item" href="#">Another action</a></li>
-            <li><a class="dropdown-item" href="#">Something else here</a></li>
-          </ul>
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'interest_rate:inflation_view' %}">Inflation</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'beta:volatility_view' %}">Volatility</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'beta:beta_view' %}">Calculate Beta</a>
+        </li>
         </li>
       </ul>
     </div>

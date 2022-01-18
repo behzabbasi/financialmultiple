@@ -6,7 +6,7 @@
 {% block content %}
 
 
-<section id="top" class="p-2 border-bottom mt-5 pb-5 m-4">
+<section id="top" class="p-2 border-bottom m-4">
   <div class="container-fluid">
     <div class="row align-items-center justify-content-between">
       <div class="col-12 col-lg-4 p-5">
@@ -17,6 +17,36 @@
         <p>
           Source: Standard & Poor's
         </p>
+        <div class="table-responsive">
+          <table class="table table-striped table-sm">
+            <thead>
+              <tr>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">Current</th>
+                <td>{{ current_ }}</td>
+              </tr>
+              <tr>
+                <th scope="row">Mean</th>
+                <td>{{ mean_ }}</td>
+              </tr>
+              <tr>
+                <th scope="row">Median</th>
+                <td>{{ median_ }}</td>
+              </tr>
+              <tr>
+                <th scope="row">Min</th>
+                <td>{{ min_ }}</td>
+              </tr>
+              <tr>
+                <th scope="row">Max</th>
+                <td>{{ max_ }}</td>
+              </tr>
+            </tbody>
+          </table>
+      </div>
       </div>
       <div class="chart_wrap col-12 col-lg-8">
         <div class="chart" id="" width="100%" height="">
@@ -32,8 +62,9 @@
 <section class="p-5">
   <div class="container-fluid">
     <div class="row">
-      <div class="col-md-4 pt-5 p-5 border border-secondary bg-light me-5 rounded-3">
-        <ul class="nav flex-column">
+      <div class="col-md-12 pt-3 p-3 border border-secondary bg-light me-5 rounded-3">
+        <h4 class="pt-3 pb-1 d-inline-block tag-title">Most popular:</h4>
+        <ul class="flex-column link-tabs">
           <li class="nav-item">
             <a class="nav-link" aria-current="page" href="{% url 'sp500:sp500_view_pe' %}">
               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-bar-chart-2" aria-hidden="true"><line x1="18" y1="20" x2="18" y2="10"></line><line x1="12" y1="20" x2="12" y2="4"></line><line x1="6" y1="20" x2="6" y2="14"></line></svg>
@@ -70,54 +101,42 @@
               S&P 500 Earnings Growth Rate by Quarter
             </a>
           </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{% url 'sp500:sp500_view_dis_ps_ratio' %}">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-bar-chart-2" aria-hidden="true"><line x1="18" y1="20" x2="18" y2="10"></line><line x1="12" y1="20" x2="12" y2="4"></line><line x1="6" y1="20" x2="6" y2="14"></line></svg>
+              S&P 500 Price to Sales Distribution
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{% url 'sp500:sp500_view_dis_rev_growth' %}">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-bar-chart-2" aria-hidden="true"><line x1="18" y1="20" x2="18" y2="10"></line><line x1="12" y1="20" x2="12" y2="4"></line><line x1="6" y1="20" x2="6" y2="14"></line></svg>
+              S&P 500 Revenue Growth Distribution
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{% url 'sp500:sp500_view_dis_op_margin' %}">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-bar-chart-2" aria-hidden="true"><line x1="18" y1="20" x2="18" y2="10"></line><line x1="12" y1="20" x2="12" y2="4"></line><line x1="6" y1="20" x2="6" y2="14"></line></svg>
+              S&P 500 Operating Margin Distribution
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{% url 'sp500:sp500_view_dis_gr_margin' %}">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-bar-chart-2" aria-hidden="true"><line x1="18" y1="20" x2="18" y2="10"></line><line x1="12" y1="20" x2="12" y2="4"></line><line x1="6" y1="20" x2="6" y2="14"></line></svg>
+              S&P 500 Gross margin Distribution
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{% url 'sp500:sp500_view_excess_cape' %}">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-bar-chart-2" aria-hidden="true"><line x1="18" y1="20" x2="18" y2="10"></line><line x1="12" y1="20" x2="12" y2="4"></line><line x1="6" y1="20" x2="6" y2="14"></line></svg>
+              S&P 500 Excess CAPE Yield
+            </a>
+          </li>
         </ul>
       </div>
 
-      <div class="col-md-7 pt-3">
-        <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
-            <h1 class="h2">S&P 500 Price to sales ratio:</h1>
-        </div>
-        <div class="table-responsive">
-          <table class="table table-striped table-sm">
-            <thead>
-              <tr>
-                <th scope="col">#</th>
-                <th scope="col">Header</th>
-                <th scope="col">Header</th>
-                <th scope="col">Header</th>
-                <th scope="col">Header</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>1,001</td>
-                <td>random</td>
-                <td>data</td>
-                <td>placeholder</td>
-                <td>text</td>
-              </tr>
-              <tr>
-                <td>1,002</td>
-                <td>placeholder</td>
-                <td>irrelevant</td>
-                <td>visual</td>
-                <td>layout</td>
-              </tr>
-              <tr>
-                <td>1,003</td>
-                <td>data</td>
-                <td>rich</td>
-                <td>dashboard</td>
-                <td>tabular</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-      </div>
+      
     </div>
   </div>
 </section>
-
-
 
 {% endblock content %}

@@ -1,3 +1,4 @@
+from statistics import median
 import pandas as pd
 import numpy as np
 import plotly.graph_objects as go
@@ -41,16 +42,22 @@ def read_data(data_name):
 
 def show_data(data_name):
   df_sp500_ratio=read_data(data_name)
+
+  mean_=round(df_sp500_ratio['Value'].mean(),1)
+  median_=round(df_sp500_ratio['Value'].median(),1)
+  min_=round(df_sp500_ratio['Value'].min(),1)
+  max_=round(df_sp500_ratio['Value'].max(),1)
+  current_=round(df_sp500_ratio.iloc[-1]['Value'],1)
   fig = go.Figure()
   fig["layout"]["margin"] = {"l": 20, "r": 20, "b": 20, "t": 20}
   fig["layout"]["legend"] = {"x": 0.01, "y": 1, "xanchor": "left"}
-  fig.add_trace(go.Scatter(x=df_sp500_ratio.index, y=df_sp500_ratio["Value"], mode="lines", marker=dict(size=7, color='#F98404'), fill='tozeroy',))
+  fig.add_trace(go.Scatter(x=df_sp500_ratio.index, y=df_sp500_ratio["Value"], mode="lines",line=dict(width=1), marker=dict(size=7, color='#F98404'), fill='tozeroy',))
   fig.update_layout(plot_bgcolor='#424642',paper_bgcolor  ='#424642',legend_font_color='#fff',font_color='#fff') #314E52 #082032 #424642
   fig.update_xaxes(showgrid=True, gridwidth=1, gridcolor='#808080')
   fig.update_yaxes(showgrid=True, gridwidth=1, gridcolor='#808080')
   fig.update_xaxes(zeroline=True, zerolinewidth=1, zerolinecolor='#808080')
   fig.update_yaxes(zeroline=True, zerolinewidth=1, zerolinecolor='#808080')
-  return fig
+  return fig,current_, mean_,median_, min_, max_
 
 
 # Alpha info
@@ -85,6 +92,11 @@ def df_info():
 
 def sp500_distribution(data_name):
   sp500_info=df_info()
+  mean_=round(sp500_info[data_name].mean(),2)
+  median_=round(sp500_info[data_name].median(),2)
+  min_=round(sp500_info[data_name].min(),2)
+  max_=round(sp500_info[data_name].max(),2)
+  current_='--'
   fig = go.Figure()
 
   if data_name=='PriceToSalesRatioTTM':
@@ -114,7 +126,7 @@ def sp500_distribution(data_name):
   fig.update_yaxes(showgrid=True, gridwidth=1, gridcolor='#808080')
   fig.update_xaxes(zeroline=True, zerolinewidth=1, zerolinecolor='#808080')
   fig.update_yaxes(zeroline=True, zerolinewidth=1, zerolinecolor='#808080')
-  return fig
+  return fig, current_, mean_,median_, min_, max_
 
 
 def excess_cape():
@@ -122,6 +134,11 @@ def excess_cape():
   df_real_rate = web.DataReader('DFII10', data_source="fred", start=start, end=end)
   df=pd.concat([df_shiller, df_real_rate], axis=1).ffill().dropna()
   df['Excess_CAPE']=1/df['Value']*100-df['DFII10']
+  mean_=round(df['Excess_CAPE'].mean(),1)
+  median_=round(df['Excess_CAPE'].median(),1)
+  min_=round(df['Excess_CAPE'].min(),1)
+  max_=round(df['Excess_CAPE'].max(),1)
+  current_=round(df.iloc[-1]['Excess_CAPE'],1)
   fig = go.Figure()
   fig["layout"]["margin"] = {"l": 20, "r": 20, "b": 20, "t": 20}
   fig["layout"]["legend"] = {"x": 0.01, "y": 1, "xanchor": "left"}
@@ -131,4 +148,4 @@ def excess_cape():
   fig.update_yaxes(showgrid=True, gridwidth=1, gridcolor='#808080')
   fig.update_xaxes(zeroline=True, zerolinewidth=1, zerolinecolor='#808080')
   fig.update_yaxes(zeroline=True, zerolinewidth=1, zerolinecolor='#808080')
-  return fig
+  return fig, current_, mean_,median_, min_, max_
