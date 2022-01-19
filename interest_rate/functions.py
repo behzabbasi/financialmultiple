@@ -7,7 +7,7 @@ from pathlib import Path
 import os, time
 import pandas_datareader.data as web
 
-fred_API_KEY='fe837a2c2f654a04d41f5c3ca3e0124b'
+API_KEY='fe837a2c2f654a04d41f5c3ca3e0124b'
 
 
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -32,13 +32,16 @@ def check_data_exist(data_name):
 def read_data_fred(symb, data_name, columns_name, start=start_str, end=end_str):
     if check_data_exist(data_name):
         df = pd.read_csv(f"{path_name}{data_name}.csv", index_col=0) 
-
     else:
+      try:
+        print('true')
+        print(start)
         df = web.DataReader(symb, "fred", start=start, end=end)
         df=df.dropna()
         df.columns=columns_name
         df.to_csv(f"{path_name}{data_name}.csv")
-
+      except:
+        df = pd.read_csv(f"{path_name}{data_name}.csv", index_col=0) 
     return df
 
 
@@ -85,12 +88,13 @@ def yield_curve():
   symbols=['DFF','DTB3','DTB6','DGS1','DGS2','DGS3','DGS5','DGS7','DGS10','DGS20','DGS30'] 
   columns_name=['Fed_Funds_Eff._Rate','3_Month_TBill','6_Month_TBill','1Y_Treasury','2Y_Treasury','3Y_Treasury','5Y_Treasury','7Y_Treasury','10Y_Treasury','20Y_Treasury','30Y_Treasury']
   df_data=read_data_fred(symbols,'US_Interest_rate',columns_name)
-  
   df_data=df_data.dropna()
+  #df_data.index = pd.to_datetime(df_data.index, format = "%Y-%m-%d").strftime('%Y-%m-%d')
   color = ['#F98404', '#aefeff','#8bcbcc', '#689899','#466666']
   fig = make_subplots(specs=[[{"secondary_y": True}]])
   for i in range(0,5):
-    df=df_data.iloc[[-365*i-1]].T
+    df=pd.DataFrame()
+    df=df_data.iloc[[-252*i-1]].T
     col=str(df.columns[0])
     fig.add_trace(
         go.Scatter(x=df.index, y=df[col].values,name=col,mode='lines+markers',marker_color=color[i]),secondary_y=True,
@@ -157,14 +161,13 @@ def tips_rate():
   return fig, list_items
 
 
-
 def expected_inflation():
   start_inflation=(start_time-timedelta(days=365)).strftime("%Y-%m-%d")
   symbols3=['DGS10','DFII10'] 
   columns_name3=['10Y Treasury','10Y TIPS']
   df_infl_expec=read_data_fred(symbols3,'inflation_expectation',columns_name3)
   df_infl_expec['expected Inflation']=df_infl_expec['10Y Treasury']-df_infl_expec['10Y TIPS']
-  df = web.DataReader('CPIAUCSL', "fred", start=start_inflation)
+  df=read_data_fred('CPIAUCSL','core_cpi',['CPIAUCSL'], start=start_inflation)
   df['CPI Growth']=(df/df.shift(12)-1)*100
   df_infl_expec=df_infl_expec.dropna()
   df=df.dropna()
@@ -187,7 +190,7 @@ def expected_inflation():
   fig1.add_trace(go.Scatter(x=df_infl_expec.index, y=df_infl_expec['10Y Treasury'], name='10Y Treasury', fill=None, line=dict(color="#aefeff", width=1))) # fill down to xaxis
   fig1.add_trace(go.Scatter(x=df_infl_expec.index, y=df_infl_expec['10Y TIPS'],name='10Y TIPS', fill='tonexty', line=dict(color="#E60965", width=1))) # fill to trace0 y
   fig1.add_trace(go.Scatter(x=df_infl_expec.index, y=df_infl_expec['expected Inflation'], name='expected Inflation', line=dict( width=1))) # fill to trace0 y
-  fig1.add_trace(go.Scatter(x=df.index, y=df['CPI Growth'], name='CPI growth',mode='lines+markers',line=dict( width=1.5) )) # fill to trace0 y
+  fig1.add_trace(go.Scatter(x=df.index, y=df['CPI Growth'], name='Core CPI growth',mode='lines+markers',line=dict( width=1.5) )) # fill to trace0 y
   fig1["layout"]["margin"] = {"l": 20, "r": 20, "b": 10, "t": 30}
   fig1["layout"]["legend"] = {"x": 0.01, "y": 1, "xanchor": "left"}
   fig1.update_layout(plot_bgcolor='#424642',paper_bgcolor  ='#424642',legend_font_color='#fff',font_color='#fff') #314E52 #082032 #424642

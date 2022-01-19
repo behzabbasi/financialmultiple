@@ -5,6 +5,23 @@ body {
   background-color:#F4F9F9;
 }
 
+.album{
+  --featured-img: linear-gradient(180deg, rgb(167, 167, 167), #262626);
+  --bg-blend-mode: overlay;
+  background-color: #262626;
+  background-position: top 58 px center;
+  background-repeat: no-repeat;
+  background-image: radial-gradient(75% 75% at top center, rgba(0, 0, 0, 0.55), #262626), url(../../images/wallstreet.jpg);
+  padding: 4rem 0 0.5rem 0;
+  border-top: 1px solid #eee;
+  color: rgb(198, 198, 198);
+  height: auto;
+  background-repeat: no-repeat;
+  background-attachment: fixed; 
+  background-size: cover;
+
+}
+
 .chart_wrap {
     border:1px solid gray;
     border-radius:10px;
@@ -12,6 +29,7 @@ body {
     /* padding-bottom: 100%; */
     height: 400px;
     overflow:hidden;
+    
 }
 .chart{
     position: absolute;
@@ -86,3 +104,29 @@ body {
     background: #fdce9b;
     border-color:#f98404;
 }
+
+.card:hover{
+  transform: scale(0.95);
+}
+
+.card{
+  transition: all 0.3s;
+  border-radius: 1.5rem;
+  background-size: cover;
+  border: solid #fff 1px;
+}
+
+.card a{
+  text-decoration: none;
+  color: #333;
+}
+.card h2{
+  text-decoration: none;
+  color: #ffff;
+}
+.card-text{
+  text-align: center;
+  font-weight: bold;
+  font-size: 16px;
+}
+

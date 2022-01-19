@@ -1,8 +1,12 @@
 {% extends 'base.html' %}
 {% load static %}
 
-{% block title %}S&P 500 important ratio{% endblock title %}
-{% block description %}some other description{% endblock description%}
+{% block title %}US Treasury Bills{% endblock title %}
+{% block title_og %}US Treasury Bills{% endblock title_og %}
+{% block title_meta %}US Treasury Bills{% endblock title_meta %}
+{% block description %}The daily secondary market quotations on the most recently auctioned Treasury Bills for each maturity tranche (8-week, 26-week, and 52-week) for which Treasury currently issues new bills.{% endblock description %}
+{% block description_og %}The daily secondary market quotations on the most recently auctioned Treasury Bills for each maturity tranche (8-week, 26-week, and 52-week) for which Treasury currently issues new bills.{% endblock description_og %}
+{% block description_meta %}The daily secondary market quotations on the most recently auctioned Treasury Bills for each maturity tranche (8-week, 26-week, and 52-week) for which Treasury currently issues new bills.{% endblock description_meta %}
 {% block content %}
 
 
@@ -10,12 +14,12 @@
   <div class="container-fluid">
     <div class="row align-items-center justify-content-between">
       <div class="col-12 col-lg-4 p-5">
-        <h1 class="h2">S&P 500 Price to sales ratio:</h1>
+        <h1 class="h2">US Treasury Bills (maturity of less than one year):</h1>
         <p class="lead">
-          S&P 500 Price to Sales Ratio (P/S or Price to Revenue). Current price to sales ratio is estimated based on current market price and 12 month sales ending June, 2021 the latest reported by S&P.
+          The daily secondary market quotations on the most recently auctioned Treasury Bills for each maturity tranche (8-week, 26-week, and 52-week) for which Treasury currently issues new bills. See also: <a class="" href="{% url 'interest_rate:expected_inflation_view' %}">US Expected Inflation vs Core-CPI</a>
         </p>
         <p>
-          Source: Standard & Poor's
+          Source: U.S. DEPARTMENT OF THE TREASURY
         </p>
       </div>
       <div class="chart_wrap col-12 col-lg-8">
@@ -81,7 +85,7 @@
           <li class="nav-item">
             <a class="nav-link" href="{% url 'interest_rate:yield_curve_view' %}">
               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-bar-chart-2" aria-hidden="true"><line x1="18" y1="20" x2="18" y2="10"></line><line x1="12" y1="20" x2="12" y2="4"></line><line x1="6" y1="20" x2="6" y2="14"></line></svg>
-              US Yield curve
+              US Treasury Yield curve
             </a>
           </li>
           <li class="nav-item">

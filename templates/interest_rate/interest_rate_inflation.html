@@ -1,8 +1,12 @@
 {% extends 'base.html' %}
 {% load static %}
 
-{% block title %}S&P 500 important ratio{% endblock title %}
-{% block description %}some other description{% endblock description%}
+{% block title %}US Expected Inflation vs Core-CPI{% endblock title %}
+{% block title_og %}US Expected Inflation vs Core-CPI{% endblock title_og %}
+{% block title_meta %}US Expected Inflation vs Core-CPI{% endblock title_meta %}
+{% block description %}The difference between the 10-Year T.Bond rate and the 10-Year TIPS rate is a measure of expected inflation.{% endblock description %}
+{% block description_og %}The difference between the 10-Year T.Bond rate and the 10-Year TIPS rate is a measure of expected inflation.{% endblock description_og %}
+{% block description_meta %}The difference between the 10-Year T.Bond rate and the 10-Year TIPS rate is a measure of expected inflation.{% endblock description_meta %}
 {% block content %}
 
 
@@ -10,12 +14,12 @@
   <div class="container-fluid">
     <div class="row align-items-center justify-content-between">
       <div class="col-12 col-lg-4 p-5">
-        <h1 class="h2">S&P 500 Price to sales ratio:</h1>
+        <h1 class="h2">US Expected Inflation vs Core-CPI:</h1>
         <p class="lead">
-          S&P 500 Price to Sales Ratio (P/S or Price to Revenue). Current price to sales ratio is estimated based on current market price and 12 month sales ending June, 2021 the latest reported by S&P.
+          The difference between the 10-Year T.Bond rate and the 10-Year TIPS rate is a measure of expected inflation. See also: <a class="" href="{% url 'interest_rate:interest_rate_tbond_view' %}">US Treasury Notes & Bonds (maturity between 2 and 30 years)</a> and <a class="" href="{% url 'interest_rate:expected_inflation_view' %}">Treasury Inflation-Protected Securities (TIPS)</a>
         </p>
         <p>
-          Source: Standard & Poor's
+          Source: U.S. Bureau of Labor Statistics
         </p>
       </div>
       <div class="chart_wrap col-12 col-lg-8">

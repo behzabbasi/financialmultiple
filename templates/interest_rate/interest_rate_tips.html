@@ -1,8 +1,12 @@
 {% extends 'base.html' %}
 {% load static %}
 
-{% block title %}S&P 500 important ratio{% endblock title %}
-{% block description %}some other description{% endblock description%}
+{% block title %}Treasury Inflation-Protected Securities{% endblock title %}
+{% block title_og %}Treasury Inflation-Protected Securities{% endblock title_og %}
+{% block title_meta %}Treasury Inflation-Protected Securities{% endblock title_meta %}
+{% block description %}Treasury Inflation-Protected Securities, or TIPS, are securities whose principal is tied to the Consumer Price Index (CPI). The principal increases with inflation and decreases with deflation. When the security matures, the U.S. Treasury pays the original or adjusted principal, whichever is greater.{% endblock description %}
+{% block description_og %}Treasury Inflation-Protected Securities, or TIPS, are securities whose principal is tied to the Consumer Price Index (CPI). The principal increases with inflation and decreases with deflation. When the security matures, the U.S. Treasury pays the original or adjusted principal, whichever is greater.{% endblock description_og %}
+{% block description_meta %}Treasury Inflation-Protected Securities, or TIPS, are securities whose principal is tied to the Consumer Price Index (CPI). The principal increases with inflation and decreases with deflation. When the security matures, the U.S. Treasury pays the original or adjusted principal, whichever is greater.{% endblock description_meta %}
 {% block content %}
 
 
@@ -10,12 +14,12 @@
   <div class="container-fluid">
     <div class="row align-items-center justify-content-between">
       <div class="col-12 col-lg-4 p-5">
-        <h1 class="h2">S&P 500 Price to sales ratio:</h1>
+        <h1 class="h2">Treasury Inflation-Protected Securities (TIPS):</h1>
         <p class="lead">
-          S&P 500 Price to Sales Ratio (P/S or Price to Revenue). Current price to sales ratio is estimated based on current market price and 12 month sales ending June, 2021 the latest reported by S&P.
+          Treasury Inflation-Protected Securities, or TIPS, are securities whose principal is tied to the Consumer Price Index (CPI). The principal increases with inflation and decreases with deflation. When the security matures, the U.S. Treasury pays the original or adjusted principal, whichever is greater. See also: <a class="" href="{% url 'interest_rate:inflation_view' %}">US US Consumer Price Index (CPI)</a>
         </p>
         <p>
-          Source: Standard & Poor's
+          Source: U.S. DEPARTMENT OF THE TREASURY
         </p>
       </div>
       <div class="chart_wrap col-12 col-lg-8">

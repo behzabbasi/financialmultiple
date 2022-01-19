@@ -1,8 +1,12 @@
 {% extends 'base.html' %}
 {% load static %}
 
-{% block title %}S&P 500 important ratio{% endblock title %}
-{% block description %}some other description{% endblock description%}
+{% block title %}S&P 500 Gross margin Distribution{% endblock title %}
+{% block title_og %}S&P 500 Gross margin Distribution{% endblock title_og %}
+{% block title_meta %}S&P 500 Gross margin Distribution{% endblock title_meta %}
+{% block description %}show the Gross margin Distribution of all S&P 500 companies. Gross margin is estimated based on the last 12 month reported Financial Statements.{% endblock description %}
+{% block description_og %}show the Gross margin Distribution of all S&P 500 companies. Gross margin is estimated based on the last 12 month reported Financial Statements.{% endblock description_og %}
+{% block description_meta %}show the Gross margin Distribution of all S&P 500 companies. Gross margin is estimated based on the last 12 month reported Financial Statements.{% endblock description_meta %}
 {% block content %}
 
 
@@ -10,13 +14,11 @@
   <div class="container-fluid">
     <div class="row align-items-center justify-content-between">
       <div class="col-12 col-lg-4 p-5">
-        <h1 class="h2">S&P 500 Price to sales ratio:</h1>
+        <h1 class="h2">S&P 500 Gross margin Distribution:</h1>
         <p class="lead">
-          S&P 500 Price to Sales Ratio (P/S or Price to Revenue). Current price to sales ratio is estimated based on current market price and 12 month sales ending June, 2021 the latest reported by S&P.
+          show the Gross margin Distribution of all S&P 500 companies. Gross margin is estimated based on the last 12 month reported Financial Statements. See also: <a class="" href="{% url 'sp500:sp500_view_dis_rev_growth' %}">S&P 500 Revenue Growth Distribution</a>
         </p>
-        <p>
-          Source: Standard & Poor's
-        </p>
+        
         <div class="table-responsive">
           <table class="table table-striped table-sm">
             <thead>
@@ -46,6 +48,9 @@
               </tr>
             </tbody>
           </table>
+          <p>
+          Source: Standard & Poor's
+        </p>
       </div>
       </div>
       <div class="chart_wrap col-12 col-lg-8">

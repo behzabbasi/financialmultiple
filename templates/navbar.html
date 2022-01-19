@@ -1,6 +1,6 @@
 <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #DDDDDD;">
   <div class="container-fluid">
-    <a class="navbar-brand" href="#"><strong>FinancialMultiple</strong></a>
+    <a class="navbar-brand" href="{% url 'home' %}"><strong>FinancialMultiple</strong></a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -10,19 +10,19 @@
           <a class="nav-link active" aria-current="page" href="{% url 'home' %}">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="{% url 'sp500:sp500_view' %}">S&P 500</a>
+          <a class="nav-link active" href="{% url 'sp500:sp500_view' %}">S&P 500</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="{% url 'interest_rate:interest_rate_tbill_view' %}">Interest rate</a>
+          <a class="nav-link active" href="{% url 'interest_rate:interest_rate_tbill_view' %}">Interest rate</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="{% url 'interest_rate:inflation_view' %}">Inflation</a>
+          <a class="nav-link active" href="{% url 'interest_rate:inflation_view' %}">Inflation</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="{% url 'beta:volatility_view' %}">Volatility</a>
+          <a class="nav-link active" href="{% url 'beta:volatility_view' %}">Volatility</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="{% url 'beta:beta_view' %}">Calculate Beta</a>
+          <a class="nav-link active" href="{% url 'beta:beta_view' %}">Calculate Beta</a>
         </li>
         </li>
       </ul>

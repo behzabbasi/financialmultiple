@@ -1,33 +1,38 @@
 {% extends 'base.html' %}
 {% load static %}
 
-{% block title %}S&P 500 important ratio{% endblock title %}
-{% block description %}some other description{% endblock description%}
+{% block title %}Calculate Beta & Correlation{% endblock title %}
+{% block title_og %}Calculate Beta & Correlation{% endblock title_og %}
+{% block title_meta %}Calculate Beta & Correlation{% endblock title_meta %}
+{% block description %}Beta (β or market beta or beta coefficient) is a measure of how an individual asset moves (on average) when the overall stock market increases or decreases. If an asset has a beta above (below) 1, it indicates that its return moves more (less) than 1-to-1 with the return of the market-portfolio, on average.{% endblock description %}
+{% block description_og %}Beta (β or market beta or beta coefficient) is a measure of how an individual asset moves (on average) when the overall stock market increases or decreases. If an asset has a beta above (below) 1, it indicates that its return moves more (less) than 1-to-1 with the return of the market-portfolio, on average.{% endblock description_og %}
+{% block description_meta %}Beta (β or market beta or beta coefficient) is a measure of how an individual asset moves (on average) when the overall stock market increases or decreases. If an asset has a beta above (below) 1, it indicates that its return moves more (less) than 1-to-1 with the return of the market-portfolio, on average.{% endblock description_meta %}
 {% block content %}
 
 
 
-<section id="top" class="p-2 border-bottom mt-5 pb-5 m-4">
+<section id="top" class="p-2 border-bottom mt-5 m-4">
   <div class="container-fluid">
     <div class="row align-items-center justify-content-between">
       <div class="col-12 col-lg-4 p-5">
         <div class=''>
-          <h1 class="h2">S&P 500 Price to sales ratio:</h1>
+          <h1 class="h2">Calculate Beta:</h1>
           <p class="lead">
-            S&P 500 Price to Sales Ratio (P/S or Price to Revenue). Current price to sales ratio is estimated based on current market price and 12 month sales ending June, 2021 the latest reported by S&P.
+            Beta (β or market beta or beta coefficient) is a measure of how an individual asset moves (on average) when the overall stock market increases or decreases. If an asset has a beta above (below) 1, it indicates that its return moves more (less) than 1-to-1 with the return of the market-portfolio, on average.
           </p>
+          
           {% if error_message %}
           <div class="">
               <label class="alert alert-danger" for="">{{error_message}}</label>
               {% else %}
-              <label class="" for="">Enter a stock-ticker and benchmark:</label>
+              <label class="" for="">Enter a Stock-Ticker and Benchmark:</label>
               {% endif %}
           </div>
           <form class="row g-3" method="POST">
             {% csrf_token %}
-            <input class="form-control" type="text" name="stock_ticker" placeholder="Search Quotes" value={% if stock_ticker %}{{stock_ticker}}{% else %}'AAPL'{% endif %}>
+            <input class="form-control" type="text" name="stock_ticker" placeholder="Stock Ticker" value={% if stock_ticker %}{{stock_ticker}}{% else %}'AAPL'{% endif %}>
             <input class="form-control" type="text" name="benchmark" placeholder="Benchmark" value= {% if benchmark %}{{benchmark}}{% else %}'^GSPC'{% endif %}>
-            <button class="btn btn-outline-primary" type="submit">Search</button>
+            <button class="btn btn-outline-primary" type="submit">Calculate Beta</button>
           </form>
         </div>
         <div class="chart_wrap col-12 col-lg-8">
@@ -37,6 +42,7 @@
             {% endautoescape %}
           </div>
         </div>
+        {% comment %} <p>Source: https://www.investopedia.com</p> {% endcomment %}
       </div>
     </div>
   </div>
@@ -48,7 +54,7 @@
 
       <div class="col-12 col-md-6 mb-5">
         <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
-            <h1 class="h2">US Treasury Rate:</h1>
+            <h1 class="h2">Beta & Correlation:</h1>
         </div>
         <div class="table-responsive">
           <table class="table table-striped table-sm">
