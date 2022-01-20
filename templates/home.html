@@ -17,7 +17,7 @@
         <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg" style="background-image:linear-gradient(rgba(34, 34, 34, 0.6), rgba(34, 34, 34, 0.6)), url('{% static 'images/sp500.jpg' %}'); background-size: cover;">
           <a href="{% url 'sp500:sp500_view' %}">
             <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
-              <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">S&P 500</h2>
+              <h1 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">S&P 500 Ratios</h1>
             </div>
           </a>
         </div>
@@ -26,7 +26,7 @@
         <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg" style="background-image:linear-gradient(rgba(34, 34, 34, 0.6), rgba(34, 34, 34, 0.6)), url('{% static 'images/home_.jpeg' %}');">
           <a href="{% url 'interest_rate:interest_rate_tbill_view' %}">
             <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
-              <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">US Interest Rate</h2>
+              <h1 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">US Interest Rate</h1>
             </div>
           </a>
         </div>
@@ -35,7 +35,7 @@
         <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg" style="background-image:linear-gradient(rgba(34, 34, 34, 0.6), rgba(34, 34, 34, 0.6)), url('{% static 'images/money.jpg' %}');">
           <a href="{% url 'interest_rate:inflation_view' %}">
             <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
-              <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">US Inflation</h2>
+              <h1 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">US Inflation</h1>
             </div>
           </a>
         </div>
@@ -44,7 +44,7 @@
         <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg" style="background-image:linear-gradient(rgba(34, 34, 34, 0.6), rgba(34, 34, 34, 0.6)), url('{% static 'images/nyse.jpg' %}');">
           <a href="{% url 'beta:volatility_view' %}">
             <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
-              <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Market Volatility</h2>
+              <h1 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Market Volatility</h1>
             </div>
           </a>
         </div>
@@ -53,7 +53,7 @@
         <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg" style="background-image:linear-gradient(rgba(34, 34, 34, 0.6), rgba(34, 34, 34, 0.6)), url('{% static 'images/beta.png' %}');">
           <a href="{% url 'beta:beta_view' %}">
             <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
-              <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Calculate Beta</h2>
+              <h1 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Calculate Beta</h1>
             </div>
           </a>
         </div>
@@ -74,85 +74,85 @@
           <li class="nav-item">
             <a class="nav-link" aria-current="page" href="{% url 'sp500:sp500_view_pe' %}">
               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-bar-chart-2" aria-hidden="true"><line x1="18" y1="20" x2="18" y2="10"></line><line x1="12" y1="20" x2="12" y2="4"></line><line x1="6" y1="20" x2="6" y2="14"></line></svg>
-              S&P 500 PE Ratio by Month
+              <h1>S&P 500 PE Ratio by Month</h1>
             </a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="{% url 'sp500:sp500_view_shiller_pe' %}">
               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-bar-chart-2" aria-hidden="true"><line x1="18" y1="20" x2="18" y2="10"></line><line x1="12" y1="20" x2="12" y2="4"></line><line x1="6" y1="20" x2="6" y2="14"></line></svg>
-              Shiller PE Ratio by Month
+              <h1>Shiller PE Ratio by Month</h1>
             </a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="{% url 'sp500:sp500_view' %}">
               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-bar-chart-2" aria-hidden="true"><line x1="18" y1="20" x2="18" y2="10"></line><line x1="12" y1="20" x2="12" y2="4"></line><line x1="6" y1="20" x2="6" y2="14"></line></svg>
-              S&P 500 Price to Sales Ratio by Quarter
+              <h1>S&P 500 Price to Sales Ratio by Quarter</h1> 
             </a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="{% url 'sp500:sp500_view_e_yield' %}">
               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-bar-chart-2" aria-hidden="true"><line x1="18" y1="20" x2="18" y2="10"></line><line x1="12" y1="20" x2="12" y2="4"></line><line x1="6" y1="20" x2="6" y2="14"></line></svg>
-              S&P 500 Earnings Yield by Month
+              <h1>S&P 500 Earnings Yield by Month</h1>
             </a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="{% url 'sp500:sp500_view_s_growth' %}">
               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-bar-chart-2" aria-hidden="true"><line x1="18" y1="20" x2="18" y2="10"></line><line x1="12" y1="20" x2="12" y2="4"></line><line x1="6" y1="20" x2="6" y2="14"></line></svg>
-              S&P 500 Sales Growth Rate by Quarter
+              <h1>S&P 500 Sales Growth Rate by Quarter</h1>
             </a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="{% url 'sp500:sp500_view_e_growth' %}">
               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-bar-chart-2" aria-hidden="true"><line x1="18" y1="20" x2="18" y2="10"></line><line x1="12" y1="20" x2="12" y2="4"></line><line x1="6" y1="20" x2="6" y2="14"></line></svg>
-              S&P 500 Earnings Growth Rate by Quarter
+              <h1>S&P 500 Earnings Growth Rate by Quarter</h1>
             </a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="{% url 'sp500:sp500_view_dis_ps_ratio' %}">
               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-bar-chart-2" aria-hidden="true"><line x1="18" y1="20" x2="18" y2="10"></line><line x1="12" y1="20" x2="12" y2="4"></line><line x1="6" y1="20" x2="6" y2="14"></line></svg>
-              S&P 500 Price to Sales Distribution
+              <h1>S&P 500 Price to Sales Distribution</h1>
             </a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="{% url 'sp500:sp500_view_dis_rev_growth' %}">
               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-bar-chart-2" aria-hidden="true"><line x1="18" y1="20" x2="18" y2="10"></line><line x1="12" y1="20" x2="12" y2="4"></line><line x1="6" y1="20" x2="6" y2="14"></line></svg>
-              S&P 500 Revenue Growth Distribution
+              <h1>S&P 500 Revenue Growth Distribution</h1>
             </a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="{% url 'sp500:sp500_view_dis_op_margin' %}">
               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-bar-chart-2" aria-hidden="true"><line x1="18" y1="20" x2="18" y2="10"></line><line x1="12" y1="20" x2="12" y2="4"></line><line x1="6" y1="20" x2="6" y2="14"></line></svg>
-              S&P 500 Operating Margin Distribution
+              <h1>S&P 500 Operating Margin Distribution</h1>
             </a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="{% url 'sp500:sp500_view_dis_gr_margin' %}">
               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-bar-chart-2" aria-hidden="true"><line x1="18" y1="20" x2="18" y2="10"></line><line x1="12" y1="20" x2="12" y2="4"></line><line x1="6" y1="20" x2="6" y2="14"></line></svg>
-              S&P 500 Gross margin Distribution
+              <h1>S&P 500 Gross margin Distribution</h1>
             </a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="{% url 'sp500:sp500_view_excess_cape' %}">
               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-bar-chart-2" aria-hidden="true"><line x1="18" y1="20" x2="18" y2="10"></line><line x1="12" y1="20" x2="12" y2="4"></line><line x1="6" y1="20" x2="6" y2="14"></line></svg>
-              S&P 500 Excess CAPE Yield
+              <h1>S&P 500 Excess CAPE Yield</h1>
             </a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="{% url 'interest_rate:inflation_view' %}">
               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-bar-chart-2" aria-hidden="true"><line x1="18" y1="20" x2="18" y2="10"></line><line x1="12" y1="20" x2="12" y2="4"></line><line x1="6" y1="20" x2="6" y2="14"></line></svg>
-              US Consumer Price Index (CPI)
+              <h1>US Consumer Price Index (CPI)</h1>
             </a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="{% url 'interest_rate:expected_inflation_view' %}">
               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-bar-chart-2" aria-hidden="true"><line x1="18" y1="20" x2="18" y2="10"></line><line x1="12" y1="20" x2="12" y2="4"></line><line x1="6" y1="20" x2="6" y2="14"></line></svg>
-              US Expected Inflation vs Core-CPI
+              <h1>US Expected Inflation vs Core-CPI</h1>
             </a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="{% url 'interest_rate:yield_curve_view' %}">
               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-bar-chart-2" aria-hidden="true"><line x1="18" y1="20" x2="18" y2="10"></line><line x1="12" y1="20" x2="12" y2="4"></line><line x1="6" y1="20" x2="6" y2="14"></line></svg>
-              US Treasury Yield curve
+              <h1>US Treasury Yield curve</h1>
             </a>
           </li>
         </ul>

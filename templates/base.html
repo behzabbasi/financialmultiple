@@ -26,11 +26,8 @@
   <link rel="manifest" href="/manifest.webmanifest">
 
   <title>Financialmultiple &mdash; {% block title %}{% endblock title%}</title>
-  <meta name="description" content="FinancialMultiple - {% block description_meta %}{% endblock description_meta %}">
-
-  <meta name="cXenseParse:description" content="FinancialMultiple - {% block description %}{% endblock description %}">
-  <meta name="cXenseParse:url" content="https://financialmultiple.com">
-
+  <meta name="description" content="FinancialMultiple - {% block description_meta %}{% endblock description_meta %}" itemprop="description">
+  
   <meta property="og:site_name" content="FinancialMultiple">
   <meta property="og:site" content="financialmultiple.com">
   <meta property="og:title" content="FinancialMultiple – {% block title_og %}{% endblock title_og%}">
@@ -38,6 +35,9 @@
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://financialmultiple.com/{% block url_og %}{% endblock url_og %}">
 
+  <meta name="cXenseParse:description" content="FinancialMultiple - {% block description %}{% endblock description %}">
+  <meta name="cXenseParse:url" content="https://financialmultiple.com">
+  
   <meta name="title" content="FinancialMultiple – {% block title_meta %}{% endblock title_meta%}">
   <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
   {% comment %} CSS {% endcomment %}
