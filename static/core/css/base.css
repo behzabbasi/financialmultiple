@@ -5,6 +5,10 @@ body {
   background-color:#F4F9F9;
 }
 
+.navbar{
+background-color: #DDDDDD;
+}
+
 .album{
   --featured-img: linear-gradient(180deg, rgb(167, 167, 167), #262626);
   --bg-blend-mode: overlay;
@@ -146,3 +150,58 @@ margin-inline-start: 0px;
 margin-inline-end: 0px;
 line-height: 1.6;
 }
+
+.popular-header {
+    margin-top: 4rem;
+    flex: 0 0 250px;
+    margin-right: 1rem;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 1.5rem;
+    transform: translateY(-10px) rotate(-10deg);
+    transition: all 0.3s;
+}
+
+.popular-header:before {
+    content: "";
+    background: linear-gradient(45deg,#ff7a18,#af002d 41.07%,#319197 76.05%);
+    position: absolute;
+    top: -4px;
+    left: -4px;
+    width: calc(100% + 8px);
+    height: calc(100% + 8px);
+    z-index: 1;
+    border-radius: 25px;
+
+}
+.popular-header>* {
+    position: relative;
+    z-index: 3;
+}
+
+.popular-header:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(255, 255, 255);
+    background-image:linear-gradient(rgba(77, 77, 77, 0.6), rgba(79, 79, 79, 0.6)), url('../../images/money.jpg');
+    z-index: 2;
+    border-radius: 21px;
+  background-size: cover;
+  
+}
+
+.popular-header:hover {
+  transform: scale(0.97);
+}
+
+.popular-header a{
+  text-decoration: underline ;
+  text-decoration-color:#ff7a18
+}
+

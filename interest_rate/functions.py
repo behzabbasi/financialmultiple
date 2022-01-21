@@ -34,8 +34,6 @@ def read_data_fred(symb, data_name, columns_name, start=start_str, end=end_str):
         df = pd.read_csv(f"{path_name}{data_name}.csv", index_col=0) 
     else:
       try:
-        print('true')
-        print(start)
         df = web.DataReader(symb, "fred", start=start, end=end)
         df=df.dropna()
         df.columns=columns_name
