@@ -7,7 +7,7 @@ from pathlib import Path
 import os, time
 import pandas_datareader.data as web
 
-API_KEY='fe837a2c2f654a04d41f5c3ca3e0124b'
+#API_KEY='fe837a2c2f654a04d41f5c3ca3e0124b'
 
 
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -84,7 +84,7 @@ def show_graph(data_df):
 
 def yield_curve():
   symbols=['DFF','DTB3','DTB6','DGS1','DGS2','DGS3','DGS5','DGS7','DGS10','DGS20','DGS30'] 
-  columns_name=['Fed_Funds_Eff._Rate','3_Month_TBill','6_Month_TBill','1Y_Treasury','2Y_Treasury','3Y_Treasury','5Y_Treasury','7Y_Treasury','10Y_Treasury','20Y_Treasury','30Y_Treasury']
+  columns_name=['Fed Funds Eff. Rate','3 Month TBill','6 Month TBill','1Y Treasury','2Y Treasury','3Y Treasury','5Y Treasury','7Y Treasury','10Y Treasury','20Y Treasury','30Y Treasury']
   df_data=read_data_fred(symbols,'US_Interest_rate',columns_name)
   df_data=df_data.dropna()
   #df_data.index = pd.to_datetime(df_data.index, format = "%Y-%m-%d").strftime('%Y-%m-%d')
